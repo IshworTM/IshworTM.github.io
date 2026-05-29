@@ -1,14 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishwor | Website</title>
+    <title>Ishwor Dulal | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: system-ui;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <h1 style="color: #8f1f8f">Nice Home Page</h1>
-        <span style="color: #c01537;">K khojnu bhako? kei chaina yeta, it's still under construction!</span>
-    </div>
+
+<body>
+
+    <div id="progress"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav>
+        <a href="#" class="nav-logo">dev<span>.</span>np</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:1rem;">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-icon moon">🌙</span>
+                <span class="toggle-icon sun">☀️</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-orb orb1"></div>
+            <div class="hero-orb orb2"></div>
+
+            <div class="hero-inner">
+                <div class="hero-badge">Available for opportunities</div>
+                <h1 class="hero-name">Ishwor<br><span class="accent-word">Dulal</span></h1>
+                <p class="hero-role">Software Engineer</p>
+                <p class="hero-title">Full Stack · Python · JavaScript · Odoo · Flask · Linux</p>
+                <p class="hero-desc">
+                    Building robust backend systems and full-stack applications with a focus on clean architecture,
+                    performance,
+                    and developer experience. Based in Lalitpur, Nepal.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.08 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18.5l.19-1.58z" />
+                        </svg>
+                        Get in Touch
+                    </a>
+                    <a href="#experience" class="btn-secondary">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        View Experience
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">2.5</span>
+                        <span class="stat-label">Years Industry Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Trainees Mentored</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">On-Time Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About me section -->
+        <section id="about">
+            <div class="section-header reveal">
+                <div class="section-tag">01 — About</div>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a 22 years old <strong>Software Engineer</strong> with over 2.5 years of professional
+                        experience,
+                        specializing in
+                        Python based backend development, JavaScript, Odoo ERP customization, and full-stack web
+                        applications.
+                    </p>
+                    <p>
+                        Beyond writing code, I care deeply about <strong>clean architecture, team dynamics, and
+                            knowledge
+                            sharing</strong>. I've had the privilege of mentoring 10+ trainees — guiding them through
+                        the basics and
+                        some real world engineering challenges and helping them grow into confident developers.
+                    </p>
+                    <p>
+                        I prefer collaborative environments and enjoy solving hard problems that require both technical
+                        depth and
+                        creative thinking. Comfortable in Linux environments.
+                    </p>
+                    <div class="about-traits">
+                        <span class="trait-tag">Eager to Learn</span>
+                        <span class="trait-tag">Problem Solver</span>
+                        <span class="trait-tag">Work Ethics</span>
+                        <span class="trait-tag">Team Player</span>
+                        <span class="trait-tag">Linux Native</span>
+                        <span class="trait-tag">Mentor</span>
+                        <span class="trait-tag">Detail Oriented</span>
+                        <span class="trait-tag">Communication</span>
+                    </div>
+                </div>
+                <div class="about-lang-card reveal">
+                    <div class="lang-card-title">Languages & Proficiency</div>
+
+                    <div class="lang-item">
+                        <span class="lang-name">English</span>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-fill" data-level="1" style="width:100%"></div>
+                        </div>
+                        <span class="lang-level">5/5</span>
+                    </div>
+
+                    <div class="lang-item">
+                        <span class="lang-name">Nepali</span>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-fill" data-level="1" style="width:100%"></div>
+                        </div>
+                        <span class="lang-level">5/5</span>
+                    </div>
+
+                    <div class="lang-item">
+                        <span class="lang-name">Hindi</span>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-fill" data-level="0.8" style="width:80%"></div>
+                        </div>
+                        <span class="lang-level">4/5</span>
+                    </div>
+
+                    <div class="lang-item">
+                        <span class="lang-name">Spanish</span>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-fill" data-level="0.4" style="width:40%"></div>
+                        </div>
+                        <span class="lang-level">2/5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header reveal">
+                <div class="section-tag">02 — Experience</div>
+                <h2 class="section-title">Work History</h2>
+            </div>
+            <div class="exp-timeline">
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-period">2.5 Years · Full-Time</div>
+                    <div class="exp-role">Software Engineer</div>
+                    <div class="exp-company">Telematics Tech Pvt. Ltd. · Kathmandu, Nepal</div>
+                    <ul class="exp-bullets">
+                        <li>Designed and maintained Python based backend services and REST APIs powering core business
+                            workflows.
+                        </li>
+                        <li>Customized Odoo ERP modules using Python and JavaScript, delivering personalized solutions
+                            for clients
+                            across multiple industries.</li>
+                        <li>Built dynamic frontend features using JavaScript and Odoo OWL and integrated them with
+                            PostgreSQL backed
+                            data models.</li>
+                        <li>Wrote and optimized complex SQL queries and database schemas in PostgreSQL, improving query
+                            performance
+                            significantly.</li>
+                        <li>Managed, developed and deployed these systems on Linux based production servers while also
+                            maintaining
+                            them and pushing bug fixes.</li>
+                        <li>Mentored 10+ trainees, guiding them through the basics, conducting code reviews, pair
+                            programming
+                            sessions.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Python</span>
+                        <span class="exp-tag">Odoo</span>
+                        <span class="exp-tag">JavaScript</span>
+                        <span class="exp-tag">XML</span>
+                        <span class="exp-tag">PostgreSQL</span>
+                        <span class="exp-tag">Linux</span>
+                        <span class="exp-tag">Docker</span>
+                        <span class="exp-tag">Shell</span>
+                        <span class="exp-tag">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills">
+            <div class="section-header reveal">
+                <div class="section-tag">03 — Skills</div>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span class="skill-icon">🐍</span>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-desc">Primary language. Backend services, scripting, Odoo development, web apps.
+                    </div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">⚡</span>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-desc">Frontend interactivity, REST integrations, and dynamic UI components in web
+                        applications.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🗄️</span>
+                    <div class="skill-name">PostgreSQL</div>
+                    <div class="skill-desc">Complex queries and performance tuning for production databases.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:82%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🐧</span>
+                    <div class="skill-name">Linux & Shell</div>
+                    <div class="skill-desc">Daily driver. Server administration, bash scripting, process management, and
+                        environment configuration.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:88%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🐳</span>
+                    <div class="skill-name">Docker</div>
+                    <div class="skill-desc">Containerizing applications, docker-compose setups, and managing isolated
+                        development.
+                    </div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:78%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🌶️</span>
+                    <div class="skill-name">Flask</div>
+                    <div class="skill-desc">Building lightweight REST APIs and web services with Python. Clean routing,
+                        middleware, and blueprint architecture.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🔧</span>
+                    <div class="skill-name">C / C#</div>
+                    <div class="skill-desc">Systems-level thinking and object-oriented design. Strong fundamentals in
+                        memory
+                        management and compiled languages.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">☕</span>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-desc">OOP principles, data structures, and application development with AWT/Swing
+                        UI. Solid
+                        academic and project-based foundation.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:62%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🐙</span>
+                    <div class="skill-name">Git & GitHub</div>
+                    <div class="skill-desc">Version control, branching strategies, pull request reviews, and
+                        collaborative
+                        development.</div>
+                    <div class="skill-level-bar">
+                        <div class="skill-level-fill" style="width:85%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="contact-orb"></div>
+            <div class="contact-inner">
+                <div class="section-header reveal">
+                    <div class="section-tag" style="justify-content:center;">04 — Contact</div>
+                    <h2 class="section-title">Let's Connect</h2>
+                </div>
+                <p class="contact-subtitle reveal">
+                    Open to new opportunities, collaborations, or just a good conversation about tech, code, or anything
+                    in
+                    between.
+                </p>
+                <div class="contact-links reveal">
+                    <a href="mailto:info@ishwordulal.com.np" class="contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/ishwortm" target="_blank" class="contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/ishguitar" target="_blank" class="contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="docs/Ishwor Dulal - Resume.pdf" download class="contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Preview Resume
+                    </a>
+                    <a href="docs/Ishwor Dulal - Resume.pdf" target="_blank" class="contact-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="footer-copy">© 2026 — Ishwor Dulal, Kathmandu 🇳🇵</span>
+        <span class="footer-made">Built with <span>♥</span> & clean code</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
